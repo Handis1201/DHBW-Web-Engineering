@@ -1,17 +1,14 @@
-from flask import Flask, request, render_template
+from flask import Flask, render_template
+from backend.index import index
 
 app = Flask(__name__)
+app.static_folder = "static"
+app.register_blueprint(index, url_prefix='/index')
 
 
-@app.route("/test/<name>")
-def test(name):
-    return "Test " + name
-
-
-@app.route("/index")
-@app.route("/")
-def init():
-    return render_template("index.html")
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 
 if __name__ == "__main__":
