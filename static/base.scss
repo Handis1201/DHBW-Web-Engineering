@@ -46,10 +46,9 @@ h2 {
     /*border-bottom-style: solid;*/
     /*border-bottom-color: black;*/
     /*border-bottom-width: 1px;*/
-    flex: auto;
 }
 
-.content {
+%content {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -58,15 +57,6 @@ h2 {
     font-size: 30px;
     height: 100%;
     width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    flex: auto;
-}
-
-.page {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
 }
 
 nav {
