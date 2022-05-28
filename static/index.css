@@ -1,3 +1,15 @@
 .content {
-    background-image: url("sources/andrea-cau-nV7GJmSq3zc-unsplash.jpg");
+    /*background-image: url("sources/andrea-cau-nV7GJmSq3zc-unsplash.jpg");
+    background-size: 100% auto;
+    display: inline-block;
+     */
+
+}
+
+.content {
+background: url(sources/andrea-cau-nV7GJmSq3zc-unsplash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
