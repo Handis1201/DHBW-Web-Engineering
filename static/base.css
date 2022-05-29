@@ -61,6 +61,20 @@ h2 {
     background-size: auto 100%;
     background-repeat: no-repeat;
     flex: auto;
+    min-height: 1300px;
+}
+
+.onScroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.0s ease-out;
+    margin-top: 30%;
+    color: #717171;
+}
+
+.onScrollVisible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .page {

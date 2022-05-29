@@ -25,7 +25,7 @@ def show():
         abort(404)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
 #base.html inside <li...>
 #class="{{ 'active' if item.is_active else '' }}"
