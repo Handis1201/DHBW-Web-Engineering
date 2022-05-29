@@ -14,7 +14,6 @@ function isElementInViewport(el) {
 
   console.log(rect)
 
-
   //return(rect.y <= 191);
 
   return (
