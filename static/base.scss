@@ -57,6 +57,28 @@ h2 {
     font-size: 30px;
     height: 100%;
     width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    flex: auto;
+}
+
+.onScroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.0s ease-out;
+    margin-top: 30%;
+    color: #2dcba9;
+}
+
+.onScrollVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
 }
 
 nav {

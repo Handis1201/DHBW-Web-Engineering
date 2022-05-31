@@ -1,3 +1,13 @@
+@import "base";
+
 .content {
-    %extend %content
+  @extend %content;
+  background: url(sources/andrea-cau-nV7GJmSq3zc-unsplash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 1300px;
+
 }
+

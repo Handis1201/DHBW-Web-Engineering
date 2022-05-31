@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="../static/shares.css">
+
+
+
+{% endblock %}
+
+{% block header %}
+    <h1>Aktien</h1>
+    <p>Diese Seite zeigt verschiedene Aktienkurse</p>
+{% endblock %}
+{% block content %}
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div id="tradingview_fd21f"></div>
+        <div class="tradingview-widget-copyright">
+            <a href="https://de.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank">
+                <span class="blue-text">AAPL Chart</span>
+            </a> von TradingView
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript" src="../static/javascript/SharesChart.js"></script>
+        </div>
+    </div>
+    <!-- TradingView Widget END -->
+
+{% endblock %}
