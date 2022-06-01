@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="../static/spotify.css">
+    <script src="../static/javascript/Spotify.js"></script>
+
+{% endblock %}
+
+{% block header %}
+    <h1>Spotify</h1>
+    <p>Diese Seite zeigt Spotify an</p>
+{% endblock %}
+{% block content %}
+
+    <button class="button" onclick="onButtonClick()">Spotify</button>
+    <table id="spotify_result">
+        <tr>
+            <th>Titel</th>
+            <th>Beschreibung</th>
+            <th>Teaser</th>
+        </tr>
+    </table>
+
+{% endblock %}
