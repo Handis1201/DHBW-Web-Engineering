@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="../static/wiki.css">
+    <script src="../static/javascript/wiki.js"></script>
+
+{% endblock %}
+
+{% block header %}
+    <h1>Wiki</h1>
+    <p>Diese Seite ist die Übung 2</p>
+{% endblock %}
+{% block content %}
+
+     <div id="PullupOptions" class="xxx">
+            <ul>
+                <li id="popupli1" >Leute</li>
+                <li id="popupli2" ><input type="search" class="searchbar" id="searchString" /> <button onclick="searchWiki()">search</button></li>
+            </ul>
+        </div>
+
+        <div id="showwindow" style="position:fixed;left:0;display:none;background-color:white;z-index:10" class="xxxx">
+            <button type="button" id="showwindowbtn">
+                <span style="font-size:1.5em; text-align: center;"> Zurück </span>
+            </button>
+            <div id="showwindowData"></div>
+        </div>
+
+        <div id="showwiki" style="position:fixed;left:0;display:none;background-color:white;z-index:10" class="xxxx">
+            <button type="button" id="showwikibtn">
+                <span style="font-size:1.5em; text-align: center;"> Zurück </span>
+            </button>
+            <div id="showwikiData"></div>
+        </div>
+{% endblock %}
