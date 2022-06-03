@@ -19,7 +19,12 @@ function onButtonClick() {
             row.appendChild(tdDescElement);
 
             let tdTeaserElement = document.createElement("td");
-            tdTeaserElement.innerHTML = item.audio_preview_url;
+            let audio = document.createElement("audio");
+            audio.controls = true;
+            let source = document.createElement("source");
+            source.src = item.audio_preview_url;
+            audio.appendChild(source);
+            tdTeaserElement.appendChild(audio);
             row.appendChild(tdTeaserElement);
             table.appendChild(row);
         });
