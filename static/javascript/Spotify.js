@@ -3,8 +3,6 @@ function onButtonClick() {
         .then(function (response) {
             return response.json();
         }).then(function (text) {
-        console.log(text);
-        console.log(text.items)
         let table = document.getElementById("spotify_result");
         table.style.visibility = "visible";
 
