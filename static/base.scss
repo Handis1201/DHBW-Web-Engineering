@@ -1,12 +1,10 @@
+$color: #1abc9c;
+$background-color: #2dcba9;
+$nav-background: #fff;
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
-}
-
-small {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.4);
 }
 
 h1 {
@@ -17,15 +15,6 @@ h1 {
   letter-spacing: -1px;
   color: inherit;
   font-size: 40px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 30px;
-  margin: 0;
-  font-weight: 300;
-  color: inherit;
-  padding: 50px;
 }
 
 .center {
@@ -41,18 +30,14 @@ h2 {
   text-align: center;
   color: white;
   font-size: 30px;
-  background-color: #1abc9c;
-  /*background-image: linear-gradient(to bottom, #2e8771, #2dcba9);*/
-  /*border-bottom-style: solid;*/
-  /*border-bottom-color: black;*/
-  /*border-bottom-width: 1px;*/
+  background-color: $background-color;
 }
 
 %content {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #2dcba9;
+  background-color: $background-color;
   color: white;
   font-size: 30px;
   height: 100%;
@@ -63,11 +48,8 @@ h2 {
 }
 
 .onScroll {
-  //opacity: 0;
-  //transform: translateY(50px);
-  //transition: all 1.0s ease-out;
   margin-top: 20%;
-  color: #2dcba9;
+  color: $background-color;
 }
 
 .onScrollVisible {
@@ -85,7 +67,7 @@ h2 {
 nav {
   width: 80%;
   margin: 0 auto;
-  background: #fff;
+  background: $nav-background;
   padding: 50px 0;
   box-shadow: 0px 5px 0px #dedede;
 }
@@ -128,7 +110,7 @@ nav ul li a:after {
   height: 1px;
   content: '.';
   color: transparent;
-  background: #1abc9c;
+  background: $background-color;
   visibility: hidden;
   opacity: 0;
   z-index: -1;
