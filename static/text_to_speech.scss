@@ -1,0 +1,41 @@
+@import "base";
+
+.content {
+  @extend %content;
+  background: url(sources/matthew-jungling-l3abtqeY38E-unsplash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 1300px;
+}
+
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: $background-color;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: $background-color-dark;
+}
+
+.ttsDiv {
+  border-radius: 5px;
+  padding: 20px;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="../static/text_to_speech.css">
+    <script src="../static/javascript/TextToSpeech.js"></script>
+
+
+{% endblock %}
+
+{% block header %}
+    <h1>Text to speech</h1>
+    <p>Diese Seite kann geschriebenes in gesprochener Sprache ausgeben</p>
+{% endblock %}
+{% block content %}
+
+    <label for="textToSpeechText">Text to Speech</label>
+
+    <div class="ttsDiv">
+        <input type="text" id="textToSpeechText" name="text" placeholder="Text">
+        <input type="submit" value="Text to speech" onclick="textToSpeech()">
+    </div>
+
+{% endblock %}

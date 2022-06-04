@@ -165,16 +165,16 @@ nav ul li a:hover:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0%;
+  width: 0;
   height: 100%;
-  background-color: #fff;
+  background-color: #196a56;
   transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
 }
 .button:hover {
   cursor: pointer;
-  color: #196a56;
+  color: #fff;
 }
 .button:hover:before {
   width: 100%;
