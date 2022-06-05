@@ -1,4 +1,4 @@
-function onButtonClick() {
+function onSpotifyButtonClick() {
     fetch('/spotify/request')
         .then(function (response) {
             return response.json();

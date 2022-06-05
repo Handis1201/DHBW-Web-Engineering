@@ -135,4 +135,34 @@ nav ul li a:hover:after {
   min-height: 1300px;
 }
 
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #2dcba9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #196a56;
+}
+
+.wikiDiv {
+  border-radius: 5px;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=wiki.css.map */

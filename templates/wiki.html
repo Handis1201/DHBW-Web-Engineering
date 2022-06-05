@@ -11,24 +11,12 @@
 {% endblock %}
 {% block content %}
 
-     <div id="PullupOptions" class="xxx">
-            <ul>
-                <li id="popupli1" >Leute</li>
-                <li id="popupli2" ><input type="search" class="searchbar" id="searchString" /> <button onclick="searchWiki()">search</button></li>
-            </ul>
-        </div>
+    <label for="wikipediaSearchText">Wikipedia Suche</label>
 
-        <div id="showwindow" style="position:fixed;left:0;display:none;background-color:white;z-index:10" class="xxxx">
-            <button type="button" id="showwindowbtn">
-                <span style="font-size:1.5em; text-align: center;"> Zurück </span>
-            </button>
-            <div id="showwindowData"></div>
-        </div>
+    <div class="wikiDiv">
+        <input type="text" id="wikipediaSearchText" name="text" placeholder="Text">
+        <input type="submit" value="Wikipedia Suche" onclick="onWikipediaButtonClick()">
+    </div>
+    <div id="wiki_info"></div>
 
-        <div id="showwiki" style="position:fixed;left:0;display:none;background-color:white;z-index:10" class="xxxx">
-            <button type="button" id="showwikibtn">
-                <span style="font-size:1.5em; text-align: center;"> Zurück </span>
-            </button>
-            <div id="showwikiData"></div>
-        </div>
 {% endblock %}
