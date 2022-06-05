@@ -24,6 +24,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+
   &:after {
     content: '';
     position: absolute;
@@ -35,6 +36,7 @@
     border-radius: 10rem;
     z-index: -2;
   }
+
   &:before {
     content: '';
     position: absolute;
@@ -47,18 +49,27 @@
     border-radius: 10rem;
     z-index: -1;
   }
+
   &:hover {
     cursor: pointer;
     color: $white;
+
     &:before {
       width: 100%;
     }
   }
 }
 
-#spotify_result{
+#spotify_result {
   visibility: hidden;
   font-size: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  #spotify_result {
+    width: 100%;
+    font-size: 8px;
+  }
 }

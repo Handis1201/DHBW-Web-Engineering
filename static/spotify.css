@@ -187,4 +187,11 @@ nav ul li a:hover:after {
   margin-right: auto;
 }
 
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  #spotify_result {
+    width: 100%;
+    font-size: 8px;
+  }
+}
+
 /*# sourceMappingURL=spotify.css.map */

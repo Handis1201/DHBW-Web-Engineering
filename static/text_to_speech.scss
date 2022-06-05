@@ -39,3 +39,16 @@ input[type=submit]:hover {
   border-radius: 5px;
   padding: 20px;
 }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  input[type=submit] {
+    width: 40%;
+    background-color: $background-color;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}

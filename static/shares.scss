@@ -21,3 +21,12 @@
 #tradingview_fd21f {
   height: 100%;
 }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .tradingview-widget-container {
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
