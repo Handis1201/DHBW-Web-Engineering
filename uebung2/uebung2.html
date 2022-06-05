@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Uebung 2</title>
+    <script src="uebung2.js"></script>
+</head>
+<body>
+<div id="PullupOptions" style="position:fixed;left:0;display:none;background-color:white;z-index:10;border:hidden;"
+     class="xxx">
+    <button id="PullupOptionsBtn" type="button">
+        <span style="font-size:1.5em; text-align: center;"> Zurück </span>
+    </button>
+    <ul>
+        <li id="popupli1" style="list-style-type: none; padding:5px; cursor:pointer;">Leute</li>
+        <li id="popupli2" style="list-style-type: none; padding:5px; cursor:pointer;"><input type="search"
+                                                                                             id="searchString"/>
+            <button onclick="searchWiki()">search</button>
+        </li>
+    </ul>
+</div>
+<div id="showwindow" style="position:fixed;left:0;display:none;background-color:white;z-index:10" class="xxxx">
+    <button type="button" id="showwindowbtn">
+        <span style="font-size:1.5em; text-align: center;"> Zurück </span>
+    </button>
+    <div id="showwindowData"></div>
+</div>
+
+<div id="showwiki" style="position:fixed;left:0;display:none;background-color:white;z-index:10" class="xxxx">
+    <button type="button" id="showwikibtn">
+        <span style="font-size:1.5em; text-align: center;"> Zurück </span>
+    </button>
+    <div id="showwikiData"></div>
+</div>
+</body>
+</html>
