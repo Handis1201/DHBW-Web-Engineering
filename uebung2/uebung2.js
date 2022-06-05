@@ -13,6 +13,7 @@ var jsonstring = ' { "Menschen" : [' +
     ' { "Vorname" : "Peter", "Nachname" :"Müller", "Gender": "male", "Rolle" : "Student"  },' +
     ' { "Vorname" : "Susanne", "Nachname" :"Lehmann", "Gender": "female", "Rolle" : "Student"  },' +
     ' { "Vorname" : "Jürgen", "Nachname" :"Schneider", "Gender": "male", "Rolle" : "Dozent"  },' +
+    ' { "Vorname" : "Hans", "Nachname" :"Dischinger", "Gender": "male", "Rolle" : "Student"  },' +
     ' { "Vorname" : "Alfred", "Nachname" :"Strey", "Gender": "male", "Rolle" : "Dozent"  }' +
     ' ] }';
 
