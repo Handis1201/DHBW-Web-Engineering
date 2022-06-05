@@ -165,4 +165,14 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+#wiki_info {
+  font-size: large;
+  background-color: dimgray;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto auto;
+  padding: 3%;
+  visibility: hidden;
+}
+
 /*# sourceMappingURL=wiki.css.map */

@@ -23,7 +23,6 @@ nav = Navigation(app)
 nav.Bar('top', [
     nav.Item('Home', 'index.show'),
     nav.Item('Aktien', 'shares.show'),
-    nav.Item('Instagram', 'instagram.show'),
     nav.Item('Spotify', 'spotify.show'),
     nav.Item('Text to speech', 'text_to_speech.show'),
     nav.Item('Wiki', 'wiki.show'),

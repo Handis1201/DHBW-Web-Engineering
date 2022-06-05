@@ -22,8 +22,7 @@ def wikiRequest():
     string = request.args.get("string")
     page = wiki.page(string)
     if page.exists():
-        data = {"text": page.text[0:300], "link": page.fullurl}
+        data = {'text': page.text[0:300], 'link': page.fullurl}
         json_dump = json.dumps(data)
-        loads = json.loads(json_dump)
-        print(loads)
-        return loads
+        print(json_dump)
+        return json_dump
